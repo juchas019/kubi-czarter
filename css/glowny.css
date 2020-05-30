@@ -114,6 +114,7 @@ body {
   overflow: hidden;
   display: flex;
   justify-content: center;
+  align-items: flex-end;
 }
 
 /* Navbar links */
@@ -122,20 +123,29 @@ body {
   display: block;
   /* color: #f2f2f2; */
   text-align: center;
-  padding: 14px 16px;
+  padding: 17px 14px;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 26px;
+}
+
+#navbar img {
+  width: 42px;
+  margin-right: 3px;
+}
+
+#navbar .logo {
+  padding: 0px;
 }
 
 #navbar a:hover {
-  background-color: #ddd;
+  background-color: #E0EEF0;
   color: black;
 }
 
 /* Active Navbar */
 #navbar a.active {
   /* color: black; */
-  color: #E6EDF0;
+  /* color: #E6EDF0; */
 }
 
 /* Slider */
@@ -255,15 +265,6 @@ body {
   /* background-color: #333;
   color: white; */
   padding: 30px;
-}
-
-#bigTitle img {
-  width: 100px;
-  position: absolute;
-  left: 15%x;
-  top: 5%;
-
-
 }
 
 /* Reszta css */
