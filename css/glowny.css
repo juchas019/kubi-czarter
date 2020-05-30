@@ -1,7 +1,8 @@
 /* miejsce na zamiane kolorow */
-body{
+body {
   /* background-color: #818181; */
-background-color: #A0BFBD;
+  /* background-color: #A0BFBD; */
+
   font-family: 'Lato';
 }
 
@@ -11,7 +12,7 @@ background-color: #A0BFBD;
 }
 
 #navbar a.active {
-  background-color:rgb(138, 129, 121);
+  background-color: rgb(138, 129, 121);
   color: black;
 }
 
@@ -19,9 +20,6 @@ background-color: #A0BFBD;
   background-color: #B5A89B;
   color: black;
 }
-
-
-
 
 body {
   /* font-family: 'Lato', sans-serif; */
@@ -35,7 +33,6 @@ body {
 .main {
   align-items: center;
 }
-
 
 /* Menu na smartfony */
 /* The Overlay (background) */
@@ -115,6 +112,8 @@ body {
 /* Style the navbar */
 #navbar {
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 /* Navbar links */
@@ -243,6 +242,7 @@ body {
   cursor: pointer;
   /* color: #4CAF50; */
   color: #000;
+  margin-left: 10px;
 }
 
 #bigTitle {
@@ -312,7 +312,6 @@ td {
 
 .position-kontakt {
   position: absolute;
-
 }
 
 .kontaktText p,
@@ -367,10 +366,7 @@ a {
   .textBoldCennik {
     font-size: 130%;
   }
-
 }
-
-
 
 @media (max-width:600px) {
   .map iframe {
@@ -399,12 +395,14 @@ a {
   width: 100%;
   background-color: #333;
   text-align: center;
+  padding: 10px 5px;
 }
 
 .footer p {
   color: white;
   text-decoration: none;
   margin: 7px;
+  font-size: 1.2em;
 }
 
 /* To co ma być niewidoczne */
@@ -506,7 +504,6 @@ a {
   flex-direction: column;
   align-items: center;
   font-size: 150%;
-
 }
 
 .opis {
@@ -528,14 +525,12 @@ a {
   text-align: justify;
 }
 
-
 article {
   text-align: justify;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: auto;
-
 }
 
 @media (max-width:600px) {
@@ -582,7 +577,7 @@ article {
     font-size: 160%;
   }
 
-  h6{
+  h6 {
     font-size: 120%;
   }
 
@@ -653,8 +648,8 @@ article {
   h5 {
     font-size: 200%;
   }
-  
-  h6{
+
+  h6 {
     font-size: 120%;
   }
 
@@ -698,11 +693,11 @@ article {
     font-size: 280%;
   }
 
-  h5{
+  h5 {
     font-size: 200%;
   }
 
-  h6{
+  h6 {
     font-size: 120%;
   }
 
