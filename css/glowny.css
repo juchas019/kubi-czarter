@@ -1,23 +1,23 @@
 /* miejsce na zamiane kolorow */
 body {
   /* background-color: #818181; */
-  /* background-color: #A0BFBD; */
+  background-color: #F4F9F9;
 
   font-family: 'Lato';
 }
 
 #navbar {
   /* background-color: #333; */
-  background-color: #B5A89B;
+  background-color: #BAD6DD;
 }
 
 #navbar a.active {
-  background-color: rgb(138, 129, 121);
+  background-color: #70A1AC;
   color: black;
 }
 
 #bigTitle {
-  background-color: #B5A89B;
+  background-color: #8DBCC7;
   color: black;
 }
 
@@ -135,7 +135,7 @@ body {
 /* Active Navbar */
 #navbar a.active {
   /* color: black; */
-  color: #D7CDC2;
+  color: #E6EDF0;
 }
 
 /* Slider */
@@ -233,8 +233,14 @@ body {
 /* menu div */
 
 #small {
-  /* background-color: #333; */
-  background-color: #B5A89B;
+  background-color: #BAD6DD;
+}
+
+#small img {
+  width: 26px;
+  position: relative;
+  top: 5px;
+
 }
 
 .hamburger {
@@ -251,6 +257,15 @@ body {
   padding: 30px;
 }
 
+#bigTitle img {
+  width: 100px;
+  position: absolute;
+  left: 15%x;
+  top: 5%;
+
+
+}
+
 /* Reszta css */
 
 h1,
@@ -261,6 +276,7 @@ h5,
 h6 {
   text-align: center;
 }
+
 
 h4,
 h5,
@@ -393,7 +409,7 @@ a {
   right: 0;
   bottom: 0;
   width: 100%;
-  background-color: #333;
+  background-color: #70A1AC;
   text-align: center;
   padding: 10px 5px;
 }
@@ -416,6 +432,10 @@ a {
 /* 1023px */
 @media (max-width: 999px) {
   div.big {
+    display: none;
+  }
+
+  #bigTitle img {
     display: none;
   }
 }
@@ -686,7 +706,7 @@ article {
   }
 
   h3 {
-    font-size: 190%;
+    font-size: 100%;
   }
 
   h4 {
