@@ -17,9 +17,23 @@ body {
 }
 
 #bigTitle {
+  height: 40vh;
   background-color: #8DBCC7;
   color: black;
+  background-image: url("/image/yacht-lake.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* color: white; */
 }
+
+#bigTitle h1,
+h2,
+h3 {
+  color: white;
+  text-shadow: 4px 4px 20px rgba(133, 110, 96, 0.8);
+}
+
 
 body {
   /* font-family: 'Lato', sans-serif; */
@@ -95,18 +109,6 @@ body {
   font-size: 60px;
 }
 
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 450px) {
-  .overlay a {
-    font-size: 20px
-  }
-
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
-}
 
 /* Menu na przeglądarki */
 /* Style the navbar */
@@ -214,7 +216,6 @@ body {
     opacity: 1
   }
 }
-
 
 /* Przyklejanie się menu */
 /* Page content */
@@ -350,64 +351,19 @@ a {
   height: 500px;
 }
 
-@media (max-width: 1000px) {
-  .position-map {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .map iframe {
-    width: 400px;
-    height: 300px;
-  }
-
-  .kontaktText p {
-    font-size: 1.6em;
-  }
-
-  .textBoldCennik {
-    font-size: 110%;
-  }
-}
-
-@media (min-width:1000px) {
-  .kontaktText p {
-    font-size: 1.6em;
-  }
-
-  .textBoldCennik {
-    font-size: 130%;
-  }
-}
-
-@media (max-width:600px) {
-  .map iframe {
-    width: 300px;
-    height: 300px;
-  }
-
-  .kontaktText p {
-    font-size: 1.4em;
-  }
-
-  .textBoldCennik {
-    font-size: 80%;
-  }
-}
-
 /* Footer css */
 .footer {
   margin-top: 30px;
-  display: flex;
-  justify-content: space-around;
   position: relative;
   left: 0;
   right: 0;
   bottom: 0;
-  width: 100%;
+  /* width: 100%; */
   background-color: #70A1AC;
   text-align: center;
-  padding: 10px 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .footer p {
@@ -415,25 +371,6 @@ a {
   text-decoration: none;
   margin: 7px;
   font-size: 1.2em;
-}
-
-/* To co ma być niewidoczne */
-/* 1024px */
-@media (min-width: 1000px) {
-  div#small {
-    display: none;
-  }
-}
-
-/* 1023px */
-@media (max-width: 999px) {
-  div.big {
-    display: none;
-  }
-
-  #bigTitle img {
-    display: none;
-  }
 }
 
 /* Scroll UP */
@@ -519,12 +456,12 @@ a {
   color: black;
   flex-direction: column;
   align-items: center;
-  font-size: 150%;
+  font-size: 140%;
 }
 
 .opis {
   word-spacing: 1px;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   line-height: 35px;
 }
 
@@ -549,44 +486,39 @@ article {
   margin: auto;
 }
 
+/* .yacht {
+  width: 100%;
+  height: 800px;
+  background-image: url("/image/yacht.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 50000;
+
+} */
+
+
 @media (max-width:600px) {
   article {
     text-align: left;
   }
 }
 
-/* @media (min-width: 500px) {
-  .content {
-    width: 43%;
-  }
-  #button {
-    margin: 30px;
-  }
-}
-.content h1 {
-  margin-bottom: -10px;
-  color: #03a9f4;
-  line-height: 1.5;
-}
-.content h3 {
-  font-style: italic;
-  color: #96a2a7;
-} */
 
 /* Media queries */
 /* Rozmiar elementów dla przeglądarki do szerokości 450px */
 @media (max-width: 450px) {
 
   #bigTitle {
-    font-size: 110%;
+    font-size: 105%;
   }
 
   h3 {
-    font-size: 150%;
+    font-size: 130%;
   }
 
   h4 {
-    font-size: 280%;
+    font-size: 200%;
   }
 
   h5 {
@@ -650,19 +582,19 @@ article {
   }
 
   #bigTitle {
-    font-size: 190%;
+    font-size: 170%;
   }
 
   h3 {
-    font-size: 150%;
+    font-size: 130%;
   }
 
   h4 {
-    font-size: 280%;
+    font-size: 240%;
   }
 
   h5 {
-    font-size: 200%;
+    font-size: 180%;
   }
 
   h6 {
@@ -745,13 +677,84 @@ article {
   }
 }
 
-.yacht {
-  width: 100%;
-  height: 800px;
-  border: orange 1px solid;
-  background-image: url(image/yacht.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 
+@media (max-width: 1000px) {
+  .position-map {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .map iframe {
+    width: 400px;
+    height: 300px;
+  }
+
+  .kontaktText p {
+    font-size: 1.6em;
+  }
+
+  .textBoldCennik {
+    font-size: 110%;
+  }
+
+  .footer p {
+    font-size: 0.9em;
+  }
+}
+
+@media (min-width:1000px) {
+  .kontaktText p {
+    font-size: 1.6em;
+  }
+
+  .textBoldCennik {
+    font-size: 130%;
+  }
+}
+
+@media (max-width:600px) {
+  .map iframe {
+    width: 300px;
+    height: 300px;
+  }
+
+  .kontaktText p {
+    font-size: 1.4em;
+  }
+
+  .textBoldCennik {
+    font-size: 80%;
+  }
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/* To co ma być niewidoczne */
+/* 1024px */
+@media (min-width: 1000px) {
+  div#small {
+    display: none;
+  }
+}
+
+/* 1023px */
+@media (max-width: 999px) {
+  div.big {
+    display: none;
+  }
+
+  #bigTitle img {
+    display: none;
+  }
 }
